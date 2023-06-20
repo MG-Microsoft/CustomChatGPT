@@ -32,10 +32,10 @@ docker push <ChooseAzureContainerRegistryName>.azurecr.io/<ChooseContianerName>
 ```
 3.Open the docker-compose file to add your Azure Open AI base url and key, your created Azure container registry name and container image name.
 
-4. Create Azure Web Plan.
+4. Create Azure App Service Plan.
 
 5. Execute the following command to create the Azure webapp :
 ```bash
-az webapp create --resource-group <ChooseResourceGroupName> --plan <AzureWebPlanName>--name <ChooseWebAppName> --multicontainer-config-type compose --multicontainer-config-file docker-compose.yml
+az webapp create --resource-group <ChooseResourceGroupName> --plan <AzureAppPlanName>--name <ChooseWebAppName> --multicontainer-config-type compose --multicontainer-config-file docker-compose.yml
 
 ```
