@@ -1,0 +1,8 @@
+services:
+  streamlit:
+    image: <ContainerRegistryName>.azurecr.io/<ImageName>
+    environment:
+      OPENAI_API_BASE: '........'
+      OPENAI_API_KEY: '........'
+    ports:
+      - '80:8501'
