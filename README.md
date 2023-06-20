@@ -1,8 +1,8 @@
 # CustomChatGPT
 1.	Clone this repo
 2.	Make sure you have Docker and Azure CLI:
-a.	https://docs.docker.com/engine/install/
-b.	https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
+    https://docs.docker.com/engine/install/
+    https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
 3.	Open terminal to run this step:
 a.	docker build -t <ChooseContianerName> .
 b.	az login
@@ -14,4 +14,3 @@ g.	docker push <ChooseAzureContainerRegistryName>.azurecr.io/<ChooseContianerNam
 4.	Open docker-compose file to add your Azure Open AI base url and key, your created Azure container registry name and container image name
 5.	Create Azure Web Plan
 6.	az webapp create --resource-group <ChooseResourceGroupName> --plan <AzureWebPlanName>--name <ChooseWebAppName> --multicontainer-config-type compose --multicontainer-config-file docker-compose.yml
-
